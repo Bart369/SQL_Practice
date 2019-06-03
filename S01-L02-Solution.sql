@@ -3,9 +3,8 @@ SELECT
     CONCAT(`employee`.`first_name`, ' ', `employee`.`last_name`) AS employee_full_name, 
     `department`.`id` AS department_id, 
     `department`.`name` AS last_department_name   
-FROM `sample_staff`.`employee` 
-/* Do not shorten table name aliases SO I left this simply as employee 
-    Also sample_staff is the name of the database. */
+FROM `employee` 
+-- Do not shorten table name aliases SO I left this simply as employee 
 
 INNER JOIN ( /* Subquery starts in the next line */
     SELECT
